@@ -1,15 +1,20 @@
-# Basic Sample Hardhat Project
+# IPFS-Filcoin Video Marketplace
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Prerequisites:
+    Node version 12.x or higher. I built mine with Node 14.16.1
 
-Try running some of the following tasks:
+1) In your terminal:
+        
+        git clone https://github.com/georgemac510/ipfs-filecoin-video-marketplace.git
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+2) Start your Hardhat node
+   
+        npx hardhat node
+
+3) Deploy your smart contracts to `localhost`
+
+        npx hardhat run scripts/deploy.js --network localhost
+
+4) In your browser, navigate to `http://localhost:3000/`
+
+You should be up and running!
