@@ -15,6 +15,10 @@ Prerequisites:
 
         npx hardhat run scripts/deploy.js --network localhost
 
-4) In your browser, navigate to `http://localhost:3000/`
+4) In another terminal in the same directory, start the app with
+   
+        npm run dev
+
+5) In your browser, navigate to `http://localhost:3000/`
 
 You should be up and running!
