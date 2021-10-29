@@ -7,18 +7,22 @@ Prerequisites:
         
         git clone https://github.com/georgemac510/ipfs-filecoin-video-marketplace.git
 
-2) Start your Hardhat node
+2) Install app
+
+        npm install
+
+3) Start your Hardhat node
    
         npx hardhat node
 
-3) Deploy your smart contracts to `localhost`
+4) Deploy your smart contracts to `localhost`
 
         npx hardhat run scripts/deploy.js --network localhost
 
-4) In another terminal in the same directory, start the app with
+5) In another terminal in the same directory, start the app with
    
         npm run dev
 
-5) In your browser, navigate to `http://localhost:3000/`
+6) In your browser, navigate to `http://localhost:3000/`
 
 You should be up and running!
