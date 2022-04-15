@@ -27,3 +27,5 @@ contract NFT is ERC721URIStorage {
         return newItemId;
     }
 }
+
+//Rinkeby-4-15-2022: nft deployed to: 0xdd96855375A4139A27B65981fbe7deFFd29715DA

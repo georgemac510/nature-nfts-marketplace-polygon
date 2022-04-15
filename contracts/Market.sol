@@ -166,3 +166,5 @@ contract NFTMarket is ReentrancyGuard {
     return items;
   }
 }
+
+//Rinkeby-4-15-2022: nftMarket deployed to: 0x71EAcF2F2c9c0a35d667d0f3cA22Dc207C5Bc6d0
