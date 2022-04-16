@@ -11,6 +11,10 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
+    mainnet: {
+      url: `https://mainnet.infura.io/v3/${infuraId}`,
+      accounts: [privateKey]
+    },
     mumbai: {
       url: `https://polygon-mumbai.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
