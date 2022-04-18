@@ -1,6 +1,7 @@
 /* hardhat.config.js */
-require("@nomiclabs/hardhat-waffle")
-const fs = require('fs')
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
+const fs = require('fs');
 const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789"
 
 const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
@@ -25,12 +26,17 @@ module.exports = {
     },
   },
   solidity: {
-    version: "0.8.4",
+    version: "0.8.7",
     settings: {
       optimizer: {
         enabled: true,
         runs: 200
       }
     }
-  }
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey:'T9CGXJGTKZGAK8KRMCY9EZCYI73VJZGANT'
+  },
 }
