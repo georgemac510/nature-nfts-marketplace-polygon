@@ -20,6 +20,10 @@ module.exports = {
       url: `https://polygon-mumbai.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
     },
+    matic: {
+      url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
+      accounts: [privateKey]
+    },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
