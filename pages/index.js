@@ -17,7 +17,7 @@ export default function Home() {
   }, [])
   async function loadNFTs() {
     /* create a generic provider and query for unsold market items */
-    const provider = new ethers.providers.JsonRpcProvider('https://rpc-mainnet.maticvigil.com')
+    const provider = new ethers.providers.JsonRpcProvider('https://arb1.arbitrum.io/rpc')
     const contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, provider)
     const data = await contract.fetchMarketItems()
 
