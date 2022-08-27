@@ -28,6 +28,10 @@ module.exports = {
       url: `https://rinkeby.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
     },
+    arbitrum: {
+      url: `https://arbitrum-mainnet.infura.io/v3/${infuraId}`,
+      accounts: [privateKey]
+    }
   },
   solidity: {
     version: "0.8.7",
@@ -41,6 +45,6 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey:'T9CGXJGTKZGAK8KRMCY9EZCYI73VJZGANT'
+    apiKey:'2D134SPWU6WE6M7VXZUX4PWSSSUI9EKFUE'
   },
 }
