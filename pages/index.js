@@ -17,7 +17,7 @@ export default function Home() {
   }, [])
   async function loadNFTs() {
     /* create a generic provider and query for unsold market items */
-    const provider = new ethers.providers.JsonRpcProvider('https://arb1.arbitrum.io/rpc')
+    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mainnet.infura.io/v3/295cce92179b4be498665b1b16dfee34')
     const contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, provider)
     const data = await contract.fetchMarketItems()
 
@@ -75,7 +75,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-4 bg-black">
-                  <p className="text-2xl font-bold text-white">{nft.price} MATIC</p>
+                  <p className="text-2xl font-bold text-white">{nft.price} ETH</p>
                   <button className="mt-4 w-full bg-blue-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
                 </div>
               </div>
