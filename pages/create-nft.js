@@ -1,10 +1,24 @@
 import { useState } from 'react'
 import { ethers } from 'ethers'
-import { create as ipfsHttpClient } from 'ipfs-http-client'
 import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
+import { Buffer } from 'buffer';
 
-const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
+const ipfsClient = require('ipfs-http-client');
+
+const projectId = '2DxBbYeawrWvPG9XtBB5vn2XXzd';
+const projectSecret = 'a7e8ffe8c23907b9c649b172b1309afb';
+const auth =
+'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
+
+const client = ipfsClient.create({
+  host: 'ipfs.infura.io',
+  port: 5001,
+  protocol: 'https',
+  headers: {
+    authorization: auth,
+  },
+});
 
 import {
   marketplaceAddress
