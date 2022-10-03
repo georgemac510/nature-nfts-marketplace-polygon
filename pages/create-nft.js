@@ -4,22 +4,22 @@ import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 import { Buffer } from 'buffer';
 
-const ipfsClient = require('ipfs-http-client');
+import { create } from 'ipfs-http-client';
 
-const projectId = '2DxBbYeawrWvPG9XtBB5vn2XXzd';
-const projectSecret = 'a7e8ffe8c23907b9c649b172b1309afb';
+const projectId = process.env.INFURA_IPFS_ID;
+const projectSecret = process.env.INFURA_IPFS_SECRET;
+
 const auth =
-'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
+  'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
 
-const client = await ipfsClient.create({
-  host: 'ipfs.infura.io',
+const client = create({
+  host: 'nature-nfts.ipfs-infura.io',
   port: 5001,
   protocol: 'https',
-  apiPath: '/api/v0',
   headers: {
-    authorization: auth
-  }
-})
+    authorization: auth,
+  },
+});
 
 import {
   marketplaceAddress
