@@ -12,7 +12,7 @@ contract NFTMarketplace is ERC721URIStorage {
     Counters.Counter private _tokenIds;
     Counters.Counter private _itemsSold;
 
-    uint256 listingPrice = 0.005 ether;
+    uint256 listingPrice = 1.5 ether;
     address payable owner;
 
     mapping(uint256 => MarketItem) private idToMarketItem;
@@ -33,7 +33,7 @@ contract NFTMarketplace is ERC721URIStorage {
       bool sold
     );
 
-    constructor() ERC721("DAON Nature Token", "DAON") {
+    constructor() ERC721("Nature NFTs", "NNFT") {
       owner = payable(msg.sender);
     }
 
@@ -182,6 +182,9 @@ contract NFTMarketplace is ERC721URIStorage {
 }
 
 //Rinkeby nftMarketplace deployed to: 0x2b6f5e3F74806d69067b94065C1A6B4b3e7dCb80
+
+//Polygon Mainnet: 0xB54D4445a0A9B6D35394Fe256aea81ecFD59f01C
+//Verified: https://polygonscan.com/address/0xB54D4445a0A9B6D35394Fe256aea81ecFD59f01C#code
 
 //Arbitrum mainnet: 0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe
 //Verified: https://arbiscan.io/address/0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe#code
