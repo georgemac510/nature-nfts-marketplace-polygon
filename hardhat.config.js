@@ -1,5 +1,5 @@
 /* hardhat.config.js */
-require("@nomicfoundation/hardhat-chai-matchers");
+require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-ethers");
 const fs = require('fs');

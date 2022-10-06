@@ -3,8 +3,7 @@ import { ethers } from 'ethers'
 import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 import { Buffer } from 'buffer';
-
-import { create } from 'ipfs-http-client';
+import { create as ipfsHttpClient } from 'ipfs-http-client'
 
 const projectId = process.env.INFURA_IPFS_ID;
 const projectSecret = process.env.INFURA_IPFS_SECRET;
@@ -12,14 +11,12 @@ const projectSecret = process.env.INFURA_IPFS_SECRET;
 const auth =
   'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
 
-const client = create({
-  host: 'nature-nfts.ipfs-infura.io',
-  port: 5001,
-  protocol: 'https',
-  headers: {
-    authorization: auth,
-  },
-});
+const client = ipfsHttpClient({
+  url: "https://ipfs.infura.io:5001/api/v0",
+  headers:{
+    'Authorization': auth
+  }
+})
 
 import {
   marketplaceAddress
@@ -41,7 +38,7 @@ export default function CreateItem() {
           progress: (prog) => console.log(`received: ${prog}`)
         }
       )
-      const url = 'https://nature-nfts.infura-ipfs.io/ipfs/${added.path}'
+      const url = `https://nature-nfts.infura-ipfs.io/ipfs/${added.path}`
       setFileUrl(url)
     } catch (error) {
       console.log('Error uploading file: ', error)
@@ -56,7 +53,7 @@ export default function CreateItem() {
     })
     try {
       const added = await client.add(data)
-      const url = 'https://nature-nfts.infura-ipfs.io/ipfs/${added.path}'
+      const url = `https://nature-nfts.infura-ipfs.io/ipfs/${added.path}`
       /* after file is uploaded to IPFS, return the URL to use it in the transaction */
       return url
     } catch (error) {
