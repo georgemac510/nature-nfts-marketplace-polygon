@@ -183,8 +183,8 @@ contract NFTMarketplace is ERC721URIStorage {
 
 //Rinkeby nftMarketplace deployed to: 0x2b6f5e3F74806d69067b94065C1A6B4b3e7dCb80
 
-//Polygon Mainnet: 0xB54D4445a0A9B6D35394Fe256aea81ecFD59f01C
-//Verified: https://polygonscan.com/address/0xB54D4445a0A9B6D35394Fe256aea81ecFD59f01C#code
+//Polygon Mainnet: 0x3a45cfd5f6a9c758fee080f17ac90672997a92d0
+//Verified: https://polygonscan.com/address/0x3a45cfd5f6a9c758fee080f17ac90672997a92d0#code
 
 //Arbitrum mainnet: 0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe
 //Verified: https://arbiscan.io/address/0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe#code
