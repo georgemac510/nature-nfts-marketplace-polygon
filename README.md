@@ -34,12 +34,12 @@
 
 ### Deploying to an Ethereum testnet such as Goerli
 
-7) Create and configure your `.secret` and `.infuraid` files
-   a) In the `root` of your project, create a `.secret` file by typing `touch .secret`. While still in the root directory, type `touch .infuraid`. You now have two files which will hold some of our "environment variables". We will later on create a `.env` file to hold our IPFS environment variables.
+7) Create and configure your `.secret` and `.infuraid` files<br>
+   a) In the `root` of your project, create a `.secret` file by typing `touch .secret`. While still in the root directory, type `touch .infuraid`. You now have two files which will hold some of our "environment variables". We will later on create a `.env` file to hold our IPFS environment variables.<br>
    b) Go into your Metamask Chrome extension and click on the "hamburger",
    then `Create account`. We want to create a new account that is unassociated 
-   with other accounts with real Ethereum because we are going to use the new account's `private key`. 
-   c) In the next, KEEP THIS PRIVATE KEY A SECRET AND DO NOT EXPOSE IT. Now click on the "3 dots" and choose `Account details`, then `Export private key`. Copy and paste it into the `.secret` file that you created in Step 7a.
+   with other accounts with real Ethereum because we are going to use the new account's `private key`.<br> 
+   c) In the next, KEEP THIS PRIVATE KEY A SECRET AND DO NOT EXPOSE IT. Now click on the "3 dots" and choose `Account details`, then `Export private key`. Copy and paste it into the `.secret` file that you created in Step 7a.<br>
    d) Go to https://infura.io/ to open a free account. Once you have created your account, you will need to `CREATE NEW KEY`. Copy and paste the `PROJECT ID` only into the the `.infuraid` file. By the way, both the .secret and .infuraid files have no other data on line one but the keys, not even a space.
 
 8) Compile and deploy smart contract
