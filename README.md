@@ -8,20 +8,13 @@
 ### Installation
 1) In your terminal:
         
-<<<<<<< HEAD
         git clone https://github.com/georgemac510/nature-nfts-marketplace-polygon.git
-=======
-        git clone https://github.com/georgemac510/ipfs-filecoin-video-marketplace.g
->>>>>>> be9aeef3cf2b2828664dca3ce90121406c3b4430
 
 2) Install app
 
         yarn
-<<<<<<< HEAD
 
 ### Deployment
-=======
->>>>>>> be9aeef3cf2b2828664dca3ce90121406c3b4430
 
 3) Start your Hardhat node
    
@@ -33,11 +26,8 @@
 
 5) In another terminal in the same directory, start the app with
    
-<<<<<<< HEAD
         yarn dev
-=======
         yarn run dev
->>>>>>> be9aeef3cf2b2828664dca3ce90121406c3b4430
 
 6) In your browser, navigate to `http://localhost:3000/`
 
