@@ -8,11 +8,14 @@
 ### Installation
 1) In your terminal:
         
+
         git clone https://github.com/georgemac510/nature-nfts-marketplace-polygon.git
 
 2) Install app
 
         yarn
+
+### Deployment
 
 ### Deployment
 
@@ -27,7 +30,6 @@
 5) In another terminal in the same directory, start the app with
    
         yarn dev
-        yarn run dev
 
 6) In your browser, navigate to `http://localhost:3000/`
 
@@ -52,4 +54,3 @@
 
 Congratulations! 🎉💥🥇 Next up NFT deployment.
 
-You should be up and running!
