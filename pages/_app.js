@@ -1,6 +1,8 @@
 /* pages/_app.js */
 import '../styles/globals.css'
 import Link from 'next/link'
+import { MoralisProvider } from "react-moralis"
+import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,7 +32,10 @@ function MyApp({ Component, pageProps }) {
           </Link>
         </div>
       </nav>
-      <Component {...pageProps} />
+      <MoralisProvider initializeOnMount={false}>
+          <Header/>
+          <Component {...pageProps} />
+      </MoralisProvider>
     </div>
   )
 }

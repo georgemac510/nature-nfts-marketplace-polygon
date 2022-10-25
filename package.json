@@ -20,10 +20,14 @@
     "hardhat": "^2.6.5",
     "hardhat-etherscan": "^1.0.1",
     "ipfs-http-client": "^50.1.2",
+    "moralis": "^2.6.5",
+    "moralis-v1": "^1.11.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "web3modal": "^1.9.4"
+    "react-moralis": "^1.4.2",
+    "web3modal": "^1.9.4",
+    "web3uikit": "^1.0.4"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
