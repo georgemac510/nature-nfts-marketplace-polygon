@@ -12,7 +12,7 @@ contract NFTMarketplace is ERC721URIStorage {
     Counters.Counter private _tokenIds;
     Counters.Counter private _itemsSold;
 
-    uint256 listingPrice = 0.005 ether;
+    uint256 listingPrice = 1.5 ether;
     address payable owner;
 
     mapping(uint256 => MarketItem) private idToMarketItem;
@@ -33,7 +33,7 @@ contract NFTMarketplace is ERC721URIStorage {
       bool sold
     );
 
-    constructor() ERC721("DAON Nature Token", "DAON") {
+    constructor() ERC721("Nature NFTs", "NNFT") {
       owner = payable(msg.sender);
     }
 

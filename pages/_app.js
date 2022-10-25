@@ -32,10 +32,17 @@ function MyApp({ Component, pageProps }) {
           </Link>
         </div>
       </nav>
+<<<<<<< HEAD
       <MoralisProvider initializeOnMount={false}>
           <Header/>
           <Component {...pageProps} />
       </MoralisProvider>
+=======
+          <MoralisProvider initializeOnMount={false}>
+              <Header/>
+              <Component {...pageProps} />
+          </MoralisProvider>
+>>>>>>> be9aeef3cf2b2828664dca3ce90121406c3b4430
     </div>
   )
 }
