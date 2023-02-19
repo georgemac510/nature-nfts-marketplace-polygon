@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav className="border-b p-6">
-        <p className="text-4xl font-bold">Nature NFTs Marketplace</p>
+        <p className="text-4xl font-bold">Nature NFTs Marketplace 🌱</p>
         <div className="flex mt-4">
           <Link href="/">
             <a className="mr-4 text-blue-500">
@@ -32,10 +32,10 @@ function MyApp({ Component, pageProps }) {
           </Link>
         </div>
       </nav>
-          <MoralisProvider initializeOnMount={false}>
-              <Header/>
-              <Component {...pageProps} />
-          </MoralisProvider>
+      <MoralisProvider initializeOnMount={false}>
+          <Header/>
+          <Component {...pageProps} />
+      </MoralisProvider>
     </div>
   )
 }
