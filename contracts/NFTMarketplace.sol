@@ -188,3 +188,20 @@ contract NFTMarketplace is ERC721URIStorage {
 
 //Arbitrum mainnet: 0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe
 //Verified: https://arbiscan.io/address/0x464B3581d4Af6bA4587E4E3fba1a3a4702aDAaDe#code
+
+// Cancel market item
+/*    function cancelMarketItem(uint256 itemId) public nonReentrant {
+        uint256 tokenId = idToMarketItem[itemId].tokenId;
+        require(
+            idToMarketItem[itemId].seller == msg.sender,
+            "Caller not an owner of the market item"
+        );
+
+        nftContract = IERC721(idToMarketItem[itemId].nftAddress);        
+        
+        nftContract.safeTransferFrom(address(this), msg.sender, tokenId);
+
+        idToMarketItem[itemId].owner = msg.sender;
+        idToMarketItem[itemId].sold = true;
+        _itemsSold.increment();
+    }*/
