@@ -25,8 +25,8 @@ module.exports = {
       url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${infuraId}`,
+    optimism: {
+      url: `https://optimism-mainnet.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
     },
     arbitrum: {
@@ -46,6 +46,6 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey:'2D134SPWU6WE6M7VXZUX4PWSSSUI9EKFUE'
+    apiKey:'RDXG4VUHMXITU6U1WY26I8RCFXA2AE1AVX'
   },
 }
