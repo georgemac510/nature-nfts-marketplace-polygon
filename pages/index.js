@@ -17,7 +17,7 @@ export default function Home() {
   }, [])
   async function loadNFTs() {
     /* create a generic provider and query for unsold market items */
-    const provider = new ethers.providers.JsonRpcProvider('https://optimism-mainnet.infura.io/v3/4979f726dca148559fb3977ade29242c')
+    const provider = new ethers.providers.JsonRpcProvider(process.env.NEXT_PUBLIC_INFURA_ID)
     const contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, provider)
     const data = await contract.fetchMarketItems()
 
