@@ -2,16 +2,18 @@
 
 ## Prerequisites:
     
-        Node version 14.x or higher
+        Node version 16.x
         yarn
 
 ### Installation
 1) In your terminal:
+
         git clone https://github.com/georgemac510/nature-nfts-marketplace-polygon.git
 
 2) Install app
 
         yarn
+
 ### Deployment
 
 3) Start your Hardhat node
@@ -27,7 +29,6 @@
         yarn dev
 
 6) In your browser, navigate to `http://localhost:3000/`
-
 
 ### Deploying to an Ethereum testnet such as Goerli
 
