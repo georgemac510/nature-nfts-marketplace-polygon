@@ -1,5 +1,7 @@
 # Nature NFTs Marketplace - Polygon
 
+![image](https://ipfs.io/ipfs/QmcYG2ew3TrB6qrEt7E8zPC6kva6TQuw7pKJJK9pmTNfkU)
+
 ## Prerequisites:
     
         Node version 16.x
